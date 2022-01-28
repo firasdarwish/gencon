@@ -43,5 +43,5 @@ func Get[T comparable]() T {
 	}
 
 	var requestedTypeInterface T
-	panic[string](fmt.Sprintf("NO IMPLEMENTATION FOR %s WAS FOUND", reflect.TypeOf(&requestedTypeInterface).String()))
+	panic(fmt.Sprintf("NO IMPLEMENTATION FOR %s WAS FOUND", reflect.TypeOf(&requestedTypeInterface).String()))
 }
